@@ -32,6 +32,8 @@ const caesarModule = (function () {
     if (!shift | (shift === 0) | (shift < -25) | (shift > 25)) {
       return false;
     }
+    if(!encode) shift *= -1
+    return 
     // start with the value of shift 
     if(encode = false) {
       shift = shift * (-1);
@@ -48,8 +50,6 @@ const caesarModule = (function () {
          //if(inputcharacterindexnumber+ shift > 25) {
 
          }
-
-        }
         }
       }
     }

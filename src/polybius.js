@@ -82,37 +82,26 @@ const polybiusModule = (function () {
   should somehow be shown.
 */
   function polybius(input, encode = true) {
-    // when DECODING check if input is even if not return false
+    let lowerCaseInput = input.toLowerCase(); 
+    //when DECODING return false if input isn't even 
     if(encode === false) {
-      if (input.split(" ").length % 2 == 0) {
+      if (input.split(" ").length % 2 !== 0) {
         return false;
       }
-    // create encode variable to push the return 
-    const encodedMessage = [];
-    // turn the input into lowercase
-    const lowerCaseInput = encode.toLowerCase();
-    //below this line will be encoding
-    if(encode === true){
-      //write code for encoding 
-      //loop through each character in the input 
-      for(let i = 0; i < input.length; i++) {
-        //loop through the encode array
-       
-        }
-        
-      
+      if(encode == true) {
+        return lowerCaseInput.map((letter) => {
+          return cipher[letter]
+        })
+      } else {
+        return lowerCaseInput.map((number) => {
+          return decipher[number]
+        })
+      }
     }
-
-    //Decoding after this line
-    //making a change
-    //write code for decoding
-
-  }
-
   return {
     polybius,
   };
 }
 })();
 
-module.exports = { polybius: polybiusModule.polybius };
+module.exports = polybiusModule.polybius;
