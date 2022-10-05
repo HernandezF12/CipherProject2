@@ -1,16 +1,11 @@
-// Please refrain from tampering with the setup code provided here,
-// as the index.html and test files rely on this setup to work properly.
-// Only add code (helper methods, variables, etc.) within the scope
-// of the anonymous function on line 6
-
 const caesarModule = (function () {
   // you can add any code you want within this function scope
 
-  //create an array alphabet which will have all the alphabets in it
-  const alphabet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+  // //create an array alphabet which will have all the alphabets in it
+  // const alphabet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
 
-  // create the encdoed message variable to return after encoding 
-  const encodedMessage = [];
+  // // create the encdoed message variable to return after encoding 
+  // const encodedMessage = [];
 
   /*
    If the shift value isn't present, equal to 0, less than -25,
@@ -24,38 +19,25 @@ const caesarModule = (function () {
 
 */
   function caesar(input, shift, encode = true) {
-    // your solution code here
-
     // turn the input into lowerCase according to requirements
     const lowercaseInput = input.toLowerCase();
-
+    // instruction requirements 
     if (!shift | (shift === 0) | (shift < -25) | (shift > 25)) {
       return false;
     }
+    // this is to ensure you dont have to write two sets of code for encode and decode
     if(!encode) shift *= -1
-    return 
-    // start with the value of shift 
-    if(encode = false) {
-      shift = shift * (-1);
-    }
-    // begin to decipher 
-    le
-    // create a loop to loop through the array of letters
-    for (let i = 0; i < alphabet.length; i++) {
-      for (let j = 0; j < lowercaseInput.length; i++) {
-        //if statement to identify which letter it is
-        if (lowercaseInput[j] === alphabet[i]) {
-         // need another if statemenet to ensure that it doesnt
-         // go past z in the array 
-         //if(inputcharacterindexnumber+ shift > 25) {
-
-         }
-        }
+    // start off by using array methods 
+    return lowercaseInput.split('').map((character) => {
+      //lowercase letters start off @97 on ASCII table and finish 123
+      if(character.charCodeAt(0) < 97) return character
+      let num = letter.charCodeAt(0) + shift
+      if(num > 123) {
+        num = 96 +  (shift - 122)
       }
+      return String.fromCharCdode(num)
+    }).join('')
     }
-    // return encoded message and add spaces inbetween with join(" ")
-  //
-
   return {
     caesar,
   };
