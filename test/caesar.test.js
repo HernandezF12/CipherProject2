@@ -30,4 +30,20 @@ describe("caesar()", () => {
         const actual = caesar("", );
         expect(actual).to.be.false;
     });
+    //below is the test for encoding
+    it("('This is a secret message!', 8) should be 'bpqa qa i amkzmb umaaiom!'", () => {
+        //testing code goes here 
+        const input = "This is a secret message!"; 
+        const actual = caesar(input, 8);
+        const expected = 'bpqa qa i amkzmb umaaiom!'
+        expect(actual).to.equal(expected);
+    });
+    //below is the test for decoding
+    it("'('BPQA qa I amkzmb umaaiom!', 8, false) should be 'this is a secret message!'", () => {
+        //testing code goes here
+        const input = "BPQA qa I amkzmb umaaiom!";
+        const actual = caesar(input, 8, false);
+        const expected = 'this is a secret message!';
+        expect(actual).to.equal(expected);
+    });
 })
