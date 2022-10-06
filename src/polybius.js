@@ -4,8 +4,6 @@
 // of the anonymous function on line 6
 
 const polybiusModule = (function () {
-  //you can add any code you want within this function scope
-
   const cipher = {
     a: 11,
     b: 21,
