@@ -1,11 +1,8 @@
 // Write your tests here!
-const expect = require("chai").expect;
-const caesar = require("../src/caesar.js"); 
+const expect = require('chai').expect;
+const caesar = require('../src/caesar.js'); 
 
 describe("caesar()", () => {
-    it("returns false when the value isn't as required.", () => {
-        // testing code goes here
-    })
     //below is the test for is shift is less than -25
     it("if shift is less than -25", () => {
         //testing code goes here 
