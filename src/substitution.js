@@ -5,13 +5,14 @@
 
 const substitutionModule = (function () {
   // you can add any code you want within this function scope
-  // ensure that alphabet is EXACTLY 26 characters if not return false
-  if (alphabet.length !== 26){
-    return false
-  };
 
   function substitution(input, alphabet, encode = true) {
     // your solution code here
+     // ensure that alphabet is EXACTLY 26 characters if not return false
+  if (alphabet.length !== 26){
+    return false
+  };
+  
   }
 
   return {
