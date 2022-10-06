@@ -1,6 +1,6 @@
 // Write your tests here!
-const polybius = require('../src/polybius.js');
-const expect = require("chai").expect
+const {polybius} = require('../src/polybius.js');
+const {expect} = require("chai");
 
 describe("polybuis()", () => {
     it("both letters I and J to share a space, be converted to 42 and decoded to their own letters properly.", () => {

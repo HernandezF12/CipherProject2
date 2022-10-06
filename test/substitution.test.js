@@ -1,5 +1,5 @@
 // Write your tests here!
-const expect = require('chai').expect;
+const { expect } = require('chai');
 const substitution = require("../src/substitution.js");
 
 describe("substitution()", () => {

@@ -12,8 +12,7 @@ const substitutionModule = (function () {
   if (alphabet.length !== 26){
     return false
   };
-  
-  }
+}
 
   return {
     substitution,
