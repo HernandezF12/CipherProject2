@@ -70,14 +70,14 @@ const polybiusModule = (function () {
       if (input.split(" ").length % 2 !== 0) {
         return false;
       }
-      if(encode == true) {
-        return lowerCaseInput.map((letter) => {
+      if(encode === true) {
+        return lowerCaseInput.split("").map((letter) => {
           return cipher[letter]
-        })
+        }).join("")
       } else {
-        return lowerCaseInput.map((number) => {
+        return lowerCaseInput.split("").map((number) => {
           return decipher[number]
-        })
+        }).join("")
       }
     }
   return {
