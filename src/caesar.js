@@ -7,17 +7,6 @@ const caesarModule = (function () {
   // // create the encdoed message variable to return after encoding 
   // const encodedMessage = [];
 
-  /*
-   If the shift value isn't present, equal to 0, less than -25,
-   or greater than 25, the function should return false.
-   Spaces should be maintained throughout,
-   as should other nonalphabetic symbols.
-   Capital letters can be ignored.
-   If a letter is shifted so that it goes "off" the alphabet
-   (e.g., a shift of 3 on the letter z), it should wrap around to the front
-   of the alphabet (e.g., z becomes c).
-
-*/
   function caesar(input, shift, encode = true) {
     // turn the input into lowerCase according to requirements
     const lowercaseInput = input.toLowerCase();

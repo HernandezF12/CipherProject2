@@ -63,5 +63,5 @@ describe("caesar()", () => {
         const actual = caesar('wklqnixo', 3, false);
         const expected = "thinkful";
         expect(actual).to.equal(expected);
-    })
+    });
 })
