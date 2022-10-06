@@ -3,25 +3,12 @@ const polybius = require('../src/polybius.js');
 const expect = require("chai").expect
 
 describe("polybuis()", () => {
-    it("when encoding output should be a string.", () => {
-        //testing code goes here
-        const input = "thinkful"
-        const actual = polybius(input, encode = true);
-        const expected = "";
-        expect(actual).to.be.a("string")
-    });
     it("both letters I and J to share a space, be converted to 42 and decoded to their own letters properly.", () => {
         // testing code goes here 
         const input = "ij"
         const actual = polybius(input, encode = true);
         const expected = 4242; 
         expect(actual).to.equal(expected);
-    });
-    it("when decoding the number of characters in the string excluding spaces should be even, otherwise return false.", () => {
-        //testing code goes here
-        const input = "thinkful";
-        const actual = polybius(input, encode = true);
-        expect(actual).to.be.false;
     });
     it("(thinkful) should be '4432423352125413'", () => {
         //testing code goes here
