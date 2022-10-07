@@ -1,6 +1,6 @@
 // Write your tests here!
 const { expect } = require('chai');
-const substitution = require("../src/substitution.js");
+const {substitution} = require("../src/substitution.js");
 
 describe("substitution()", () => {
     it("alphabet parameter must be a string of 26 characeters, otherwise it returns false.", () => {
