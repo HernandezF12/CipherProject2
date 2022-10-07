@@ -18,7 +18,7 @@ const caesarModule = (function () {
     if(!encode) shift *= -1
     // start off by using array methods 
     return lowercaseInput.split('').map((character) => {
-      //lowercase letters start off @97 on ASCII table and finish 123
+      //lowercase letters start off 97 on ASCII table and finish 123
       if(character.charCodeAt(0) < 97) return character
       let num = letter.charCodeAt(0) + shift
       if(num > 123) {
