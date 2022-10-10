@@ -13,12 +13,6 @@ describe("substitution()", () => {
         const actual = substitution("thinkful", "abcabcabcabcabcabcabcabcyz");
         expect(actual).to.be.false;
     });
-    it("('thinkful', 'eoyqmcgrukswaflnthdjpzibev)' should be 'jrufscpw'", () => {
-        //testing code goes here
-        const actual = substitution("thinkful", "eoyqmcgrukswaflnthdjpzibev");
-        const expected = 'jrufscpw';
-        expect(actual).to.equal(expected);
-    });
     it("('You are an exellent spy', 'xoyqmcgrukswaflnthdjpzibev') should be 'elp xhm xf mbymwwmfj dne'", () => {
         //testing code goes here
         const actual = substitution("You are an excellent spy", "xoyqmcgrukswaflnthdjpzibev");
@@ -29,12 +23,6 @@ describe("substitution()", () => {
         //testing code goes here
         const actual = substitution("jrufscpw", "xoyqmcgrukswaflnthdjpzibev", false);
         const expected = 'thinkful';
-        expect(actual).to.equal(expected);
-    });
-    it("('message', '$wae&zrdxtfcygvuhbijnokmpl') should be 'y&ii$r&'", () => {
-        // testing code goes here
-        const actual = substitution("jrufscpw", "xoyqmcgrukswaflnthdjpzibev", false);
-        const expected = 'y&ii$r&';
         expect(actual).to.equal(expected);
     });
     it("('y&ii$r&', '$wae&zrdxtfcygvuhbijnokmpl') should be 'message'", () => {

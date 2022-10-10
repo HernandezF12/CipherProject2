@@ -43,20 +43,6 @@ describe("caesar()", () => {
         const expected = 'this is a secret message!';
         expect(actual).to.equal(expected);
     });
-    //below is a test for encoding provided from qualified
-    it("('thinkful', 3) should be wklqnixo", () => {
-        //testing code goes here 
-        const actual = caesar("thinkful");
-        const expected = "wklqnixo";
-        expect(actual).to.equal(expected);
-    });
-    //below is a test for encoding with a negative number for shift provided by qualifed 
-    it("('thinkful', -3) should be qefkhcri.", () => {
-        //testing code goes here
-        const actual = caesar("thinkful");
-        const expected = "qefkhcri";
-        expect(actual).to.equal(expected);
-    });
     //below is a test to decode provided by qualified
     it("('wklqnixo', 3, false) should be 'thinkful'", () => {
         //testing code goes here 

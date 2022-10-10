@@ -7,7 +7,7 @@ describe("polybuis()", () => {
         // testing code goes here 
         const input = "ij"
         const actual = polybius(input, encode = true);
-        const expected = 4242; 
+        const expected = '4242'; 
         expect(actual).to.equal(expected);
     });
     it("(thinkful) should be '4432423352125413'", () => {
@@ -15,13 +15,6 @@ describe("polybuis()", () => {
         const input = "thinkful";
         const actual = polybius(input);
         const expected = "4432423352125413";
-        expect(actual).to.equal(expected);
-    });
-    it("(Hello world) should be '3251131343 2543241341'", () => {
-        //testing code goes here 
-        const input = "Hello world";
-        const actual = polybius(input);
-        const expected = "3251131343 2543241341";
         expect(actual).to.equal(expected);
     });
     it("('3251131343 2543241341', false) should be 'hello world", () => {
